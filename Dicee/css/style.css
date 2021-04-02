@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(57, 62, 70);
+}
+
+h1 {
+    margin: 0 0 0 0;
+    color: #4ECCA3;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    color: #4ECCA3;
+    font-size: 200%;
+    font-family: 'Indie Flower', cursive;
+}
+
+.diceContainer {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.player {
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}  
+
+a {
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
