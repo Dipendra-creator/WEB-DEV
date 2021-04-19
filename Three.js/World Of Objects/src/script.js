@@ -1,51 +1,60 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { Color } from 'three'
-import { DoubleSide } from 'three'
+import * as dat from 'dat.gui'
 
-// Textures
-const textureLoader = new THREE.TextureLoader()
-const cubeTextureLoader = new THREE.CubeTextureLoader()
 
-const doorColorTexture = textureLoader.load('/textures/door/color.jpg')
-const doorAlphaTexture = textureLoader.load('/textures/door/alpha.jpg')
-const doorAmbientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
-const doorHeightTexture = textureLoader.load('/textures/door/height.jpg')
-const doorNormalTexture = textureLoader.load('/textures/door/normal.jpg')
-const doorMetalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
-const doorRoughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
-const matcapTexture = textureLoader.load('/textures/matcaps/8.png')
-const gradientTexture = textureLoader.load('/textures/gradients/5.jpg')
-
-const environmentMapTexture = cubeTextureLoader.load([
-    '/textures/environmentMaps/0/px.jpg',
-    '/textures/environmentMaps/0/nx.jpg',
-    '/textures/environmentMaps/0/py.jpg',
-    '/textures/environmentMaps/0/ny.jpg',
-    '/textures/environmentMaps/0/pz.jpg',
-    '/textures/environmentMaps/0/nz.jpg'
-])
 /**
  * Base
  */
+// Debug
+const gui = new dat.GUI()
+
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
 // Scene
 const scene = new THREE.Scene()
 
+// Axes helper
+const axesHelper = new THREE.AxesHelper()
+// scene.add(axesHelper)
+const material = new THREE.MeshNormalMaterial()
 /**
- * Objects
+ * Textures
  */
- const material = new THREE.MeshNormalMaterial({
-    //  wireframe: true,
-    //  map: doorColorTexture
-    // opacity: 0.5,
-    // transparent: true,
-    // side: DoubleSide
-})
-// material.wireframe = true
+const textureLoader = new THREE.TextureLoader()
+const matcapTexture = textureLoader.load('/textures/matcaps/3.png')
+
+/**
+ * Fonts
+ */
+const fontLoader = new THREE.FontLoader()
+fontLoader.load(
+    '/fonts/helvetiker_regular.typeface.json',
+    (font) =>
+    {
+        const textGeometry = new THREE.TextBufferGeometry('Dipendra Bhardwaj \n Web Designer',
+            {
+                font: font,
+                size: 0.5,
+                height: 0.2,
+                curveSegments: 5,
+                bevelEnabled: true,
+                bevelThickness: 0.03,
+                bevelSize: 0.02,
+                bevelOffset: 0,
+                bevelSegments: 4,
+            }
+        )
+
+        textGeometry.center()
+        const textMaterial = new THREE.MeshNormalMaterial({wireframe: false, matcap: matcapTexture})
+        const text = new THREE.Mesh(textGeometry, textMaterial)
+        scene.add(text)
+    }
+)
+
 const count = 500
 
 for(let i = 0; i < count; i++) {
@@ -66,7 +75,6 @@ for(let i = 0; i < count; i++) {
         new THREE.BoxBufferGeometry(1, 1, 1),
         material
     )
-
     var min=-50;
     var max=50; 
     var randomX = Math.floor(Math.random() * (+max - +min) + +min)
@@ -85,19 +93,15 @@ for(let i = 0; i < count; i++) {
 
     scene.add(sphere, torus, cube)
 }
+/**
+ * Object
+ */
+// const cube = new THREE.Mesh(
+//     new THREE.BoxBufferGeometry(1, 1, 1),
+//     new THREE.MeshBasicMaterial()
+// )
 
-//  const plane = new THREE.Mesh(
-//      new THREE.PlaneBufferGeometry(1, 1),
-//      material
-//  )
- 
-//  const torus = new THREE.Mesh(
-//      new THREE.TorusBufferGeometry(0.5, 0.2, 16, 32),
-//      material
-//  )
-//  torus.position.x = 1.5
-// scene.add(text)
-//  scene.add(plane, torus)
+// scene.add(cube)
 
 /**
  * Sizes
@@ -154,14 +158,6 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
-    // Update
-    // sphere.rotation.y = 0.1 * elapsedTime
-    // plane.rotation.y = 0.1 * elapsedTime
-    // torus.rotation.y = 0.1 * elapsedTime
-
-    // sphere.rotation.x = 0.15 * elapsedTime
-    // plane.rotation.x = 0.15 * elapsedTime
-    // torus.rotation.x = 0.15 * elapsedTime
     // Update controls
     controls.update()
 
