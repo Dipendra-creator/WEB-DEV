@@ -15,183 +15,88 @@
     <!-- Slick CDN -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"/>
+
+    <!-- External JavaScript -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="css/styles.min.css?h=7c62d7190b204160b027ba173d5c2519">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="btn-group">
-                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" 
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false">
-                        USD
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">
-                                ERU - Euro
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 text-center">
-                    <h2 class="my-md-3 site-title text-white">
-                        Dipendra Store
-                    </h2>
-                </div>
-                <div class="col-md-4 col-12 text-right">
-                    <p class="my-md-4 header-links">
-                        <a href="#" class="px-2">Sign In</a>
-                        <a href="#" class="px-1">Create an Account</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">DS.com</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+  <!-- Start: Header Dark -->
+  <header class="header-light">
+      <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search">
+          <div class="container"><a class="navbar-brand" style="margin: 0px 16px 0 0;" href="#">Dipendra
+                  Store</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span
+                      class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navcol-1">
                   <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">COLLECTION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
-                      </li>
+                      <li class="nav-item"></li>
                   </ul>
-                </div>
-
-                <div class="navbar-nav">
-                    <li class="nav-item border rounded-circle mx-2 search-icon">
-                        <i class="fas fa-search p-2"></i>
-                    </li>
-                    <li class="nav-item border rounded-circle mx-2 basket-icon">
-                        <i class="fas fa-shopping-basket p-2"></i>
-                    </li>
-                </div>
-              </nav>
-        </div>
-    </header>
-
-    <!-- Main Section -->
-    <main>
-        <!-- First Slider -->
-        <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./assets/item-1.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Cheap Rates But Good Quality</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <div class="collapse navbar-collapse" id="navcol-1">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item"><a class="nav-link active" href="#">ABOUT US</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">COLLECTIONS</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">CART</a></li>
+                          <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                                  data-toggle="dropdown" href="#">USD</a>
+                              <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a
+                                      class="dropdown-item" href="#">Second Item</a><a class="dropdown-item"
+                                      href="#">Third Item</a></div>
+                          </li>
+                      </ul>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/item-2.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Higher Discount</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/item-3.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Branded Items</h5>
-                    <p>
-                        <a class="btn btn-outline-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Link with href
-                        </a>
-                        <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                          Button with data-target
-                        </button>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        </div>
-                    </div>
-                  </div>
-                </div>
+                  <form class="form-inline mr-auto" target="_self">
+                      <div class="form-group"><label for="search-field"></label></div>
+                  </form><span class="navbar-text" style="width: 73.4844px;text-align: center;"><a class="login"
+                          href="#" style="text-align: center;">Log In</a></span><a class="btn btn-light action-button"
+                      role="button" href="#" style="width: 89.4531px;">Sign Up</a>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-        </div>
-
-        <!-- Second Slider -->
-        <div class="container-fluid">
-            <div class="site-slider-two px-md-4">
-                <div class="row slider-two text-center">
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="./assets/id-9-cat-1.png" alt="Product 1">
-                        <span class="border site-btn btn-span">SOFA & CHAIRS</span>
-                    </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="./assets/id-9-cat-1.png" alt="Product 1">
-                        <span class="border site-btn btn-span">SOFA & CHAIRS</span>
-                    </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="./assets/id-9-cat-1.png" alt="Product 1">
-                        <span class="border site-btn btn-span">SOFA & CHAIRS</span>
-                    </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="./assets/id-9-cat-1.png" alt="Product 1">
-                        <span class="border site-btn btn-span">SOFA & CHAIRS</span>
-                    </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="./assets/id-9-cat-1.png" alt="Product 1">
-                        <span class="border site-btn btn-span">SOFA & CHAIRS</span>
-                    </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="./assets/id-9-cat-1.png" alt="Product 1">
-                        <span class="border site-btn btn-span">SOFA & CHAIRS</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-
-    </footer>
-
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/cbff0c19fc.js" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Js Bundle-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- Slick Js CDN -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- My JS -->
-    <script src="./js/main.js"></script>
+          </div>
+      </nav><!-- Start: Simple Slider -->
+      <div class="simple-slider">
+          <!-- Start: Slideshow -->
+          <div class="swiper-container">
+              <!-- Start: Slide Wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Start: Slide -->
+                  <div class="swiper-slide"
+                      style="background: url(&quot;./assets/item-1.jpg&quot;) center center / cover no-repeat, url(&quot;./assets/item-1.jpg&quot;);">
+                  </div><!-- End: Slide -->
+                  <!-- Start: Slide -->
+                  <div class="swiper-slide"
+                      style="background: url(&quot;./assets/item-2.jpg&quot;) center center / cover no-repeat;">
+                  </div><!-- End: Slide -->
+                  <!-- Start: Slide -->
+                  <div class="swiper-slide"
+                      style="background: url(&quot;./assets/item-3.jpg&quot;) center center / cover no-repeat;">
+                  </div><!-- End: Slide -->
+              </div><!-- End: Slide Wrapper -->
+              <!-- Start: Pagination -->
+              <div class="swiper-pagination"></div><!-- End: Pagination -->
+              <!-- Start: Previous -->
+              <div class="swiper-button-prev"></div><!-- End: Previous -->
+              <!-- Start: Next -->
+              <div class="swiper-button-next"></div><!-- End: Next -->
+          </div><!-- End: Slideshow -->
+      </div><!-- End: Simple Slider -->
+      <div class="container hero">
+          <div class="row">
+              <div class="col-md-8 offset-md-2">
+                  <h1 class="text-center">The Revolution is Here.</h1>
+                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header><!-- End: Header Dark -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+  <script src="./js/script.min.js?h=b1342a01b7d7006769f48460d915530f"></script>
 </body>
 </html>
