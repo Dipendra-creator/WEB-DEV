@@ -5,98 +5,389 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipendra Store</title>
+    <script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
 
-    <!-- Custome StyleSheet -->
-    <link rel="stylesheet" href="./css/style.css">
+	<!-- Custom-Files -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Bootstrap css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- pop-up-box -->
+	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- menu style -->
 
-    <!-- Slick CDN -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- web fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"/>
-
-    <!-- External JavaScript -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="css/styles.min.css?h=7c62d7190b204160b027ba173d5c2519">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 </head>
 <body>
-  <!-- Start: Header Dark -->
-  <header class="header-light">
-      <nav class="navbar navbar-light navbar-expand-lg navigation-clean-search">
-          <div class="container"><a class="navbar-brand" style="margin: 0px 16px 0 0;" href="#">Dipendra
-                  Store</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span
-                      class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="navcol-1">
-                  <ul class="navbar-nav">
-                      <li class="nav-item"></li>
-                  </ul>
-                  <div class="collapse navbar-collapse" id="navcol-1">
-                      <ul class="navbar-nav ml-auto">
-                          <li class="nav-item"><a class="nav-link active" href="#">ABOUT US</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">COLLECTIONS</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">CART</a></li>
-                          <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
-                                  data-toggle="dropdown" href="#">USD</a>
-                              <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a
-                                      class="dropdown-item" href="#">Second Item</a><a class="dropdown-item"
-                                      href="#">Third Item</a></div>
-                          </li>
-                      </ul>
-                  </div>
-                  <form class="form-inline mr-auto" target="_self">
-                      <div class="form-group"><label for="search-field"></label></div>
-                  </form><span class="navbar-text" style="width: 73.4844px;text-align: center;"><a class="login"
-                          href="#" style="text-align: center;">Log In</a></span><a class="btn btn-light action-button"
-                      role="button" href="#" style="width: 89.4531px;">Sign Up</a>
-              </div>
-          </div>
-      </nav><!-- Start: Simple Slider -->
-      <div class="simple-slider">
-          <!-- Start: Slideshow -->
-          <div class="swiper-container">
-              <!-- Start: Slide Wrapper -->
-              <div class="swiper-wrapper">
-                  <!-- Start: Slide -->
-                  <div class="swiper-slide"
-                      style="background: url(&quot;./assets/item-1.jpg&quot;) center center / cover no-repeat, url(&quot;./assets/item-1.jpg&quot;);">
-                  </div><!-- End: Slide -->
-                  <!-- Start: Slide -->
-                  <div class="swiper-slide"
-                      style="background: url(&quot;./assets/item-2.jpg&quot;) center center / cover no-repeat;">
-                  </div><!-- End: Slide -->
-                  <!-- Start: Slide -->
-                  <div class="swiper-slide"
-                      style="background: url(&quot;./assets/item-3.jpg&quot;) center center / cover no-repeat;">
-                  </div><!-- End: Slide -->
-              </div><!-- End: Slide Wrapper -->
-              <!-- Start: Pagination -->
-              <div class="swiper-pagination"></div><!-- End: Pagination -->
-              <!-- Start: Previous -->
-              <div class="swiper-button-prev"></div><!-- End: Previous -->
-              <!-- Start: Next -->
-              <div class="swiper-button-next"></div><!-- End: Next -->
-          </div><!-- End: Slideshow -->
-      </div><!-- End: Simple Slider -->
-      <div class="container hero">
-          <div class="row">
-              <div class="col-md-8 offset-md-2">
-                  <h1 class="text-center">The Revolution is Here.</h1>
-                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"></iframe>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </header><!-- End: Header Dark -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-  <script src="./js/script.min.js?h=b1342a01b7d7006769f48460d915530f"></script>
+    <!-- top-header -->
+	<div class="agile-main-top">
+		<div class="container-fluid">
+			<div class="row main-top-w3l py-2">
+				<div class="col-lg-4 header-most-top">
+					<p class="text-white text-lg-left text-center">Offer Zone Top Deals & Discounts
+						<i class="fas fa-shopping-cart ml-1"></i>
+					</p>
+				</div>
+				<div class="col-lg-8 header-right mt-lg-0 mt-2">
+					<!-- header lists -->
+					<ul>
+						<li class="text-center border-right text-white">
+							<a class="play-icon popup-with-zoom-anim text-white" href="#small-dialog1">
+								<i class="fas fa-map-marker mr-2"></i>Select Location</a>
+						</li>
+						<li class="text-center border-right text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+								<i class="fas fa-truck mr-2"></i>Track Order</a>
+						</li>
+						<li class="text-center border-right text-white">
+							<i class="fas fa-phone mr-2"></i> +91 00000 00000
+						</li>
+						<li class="text-center border-right text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+								<i class="fas fa-sign-in-alt mr-2"></i> Log In </a>
+						</li>
+						<li class="text-center text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
+								<i class="fas fa-sign-out-alt mr-2"></i>Register </a>
+						</li>
+					</ul>
+					<!-- //header lists -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Button trigger modal(select-location) -->
+	<div id="small-dialog1" class="mfp-hide">
+		<div class="select-city">
+			<h3>
+				<i class="fas fa-map-marker"></i> Please Select Your Location</h3>
+			<select class="list_of_cities">
+				<optgroup label="Popular Cities">
+					<option selected style="display:none;color:#eee;">Select City</option>
+				</optgroup>
+				<optgroup label="Aligarh">
+					<option>Railway Road</option>
+					<option>Melrose</option>
+					<option>Center Point</option>
+					<option>Ramghat Road</option>
+				</optgroup>
+			</select>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+    <!-- header-bottom-->
+	<div class="header-bot">
+		<div class="container">
+			<div class="row header-bot_inner_wthreeinfo_header_mid">
+				<!-- logo -->
+				<div class="col-md-3 logo_agile">
+					<h1 class="text-center">
+						<a href="index.html" class="font-weight-bold font-italic">
+							<img src="images/logo2.png" style="height: 60px; margin-top: 12px;" alt=" " class="img-fluid">Dipu Store
+						</a>
+					</h1>
+				</div>
+				<!-- //logo -->
+				<!-- header-bot -->
+				<div class="col-md-9 header mt-4 mb-md-0 mb-4">
+					<div class="row">
+						<!-- search -->
+						<div class="col-10 agileits_search">
+							<form class="form-inline" action="#" method="post">
+								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required>
+								<button class="btn my-2 my-sm-0" type="submit">Search</button>
+							</form>
+						</div>
+						<!-- //search -->
+						<!-- cart details -->
+						<div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
+							<div class="wthreecartaits wthreecartaits2 cart cart box_1">
+								<form action="#" method="post" class="last">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="display" value="1">
+									<button class="btn w3view-cart" type="submit" name="submit" value="">
+										<i class="fas fa-cart-arrow-down"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+						<!-- //cart details -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- shop locator (popup) -->
+
+    <!-- navigation -->
+	<div class="navbar-inner">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="agileits-navi_search">
+					<form action="#" method="post">
+						<select id="agileinfo-nav_search" name="agileinfo_search" class="border" required="">
+							<option value="">All Categories</option>
+							<option value="Televisions">Televisions</option>
+							<option value="Headphones">Headphones</option>
+							<option value="Computers">Computers</option>
+							<option value="Appliances">Appliances</option>
+							<option value="Mobiles">Mobiles</option>
+							<option value="Fruits &amp; Vegetables">Tv &amp; Video</option>
+							<option value="iPad & Tablets">iPad & Tablets</option>
+							<option value="Cameras & Camcorders">Cameras & Camcorders</option>
+							<option value="Home Audio & Theater">Home Audio & Theater</option>
+						</select>
+					</form>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto text-center mr-xl-5">
+						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link" href="index.html">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Electronics
+							</a>
+						</li>
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Appliances
+							</a>
+						</li>
+						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link" href="product.html">New Arrivals</a>
+						</li>
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Pages
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+    <!-- banner -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<!-- Indicators-->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item item1 active">
+				<div class="container">
+					<div class="w3l-space-banner">
+						<div class="carousel-caption p-lg-5 p-sm-4 p-3">
+							<p>Get flat
+								<span>10%</span> Cashback</p>
+							<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">The
+								<span>Big</span>
+								Sale
+							</h3>
+							<a class="button2" href="product.html">Shop Now </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item item2">
+				<div class="container">
+					<div class="w3l-space-banner">
+						<div class="carousel-caption p-lg-5 p-sm-4 p-3">
+							<p>advanced
+								<span>Wireless</span> earbuds</p>
+							<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Best
+								<span>Headphone</span>
+							</h3>
+							<a class="button2" href="product.html">Shop Now </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item item3">
+				<div class="container">
+					<div class="w3l-space-banner">
+						<div class="carousel-caption p-lg-5 p-sm-4 p-3">
+							<p>Get flat
+								<span>10%</span> Cashback</p>
+							<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">New
+								<span>Standard</span>
+							</h3>
+							<a class="button2" href="product.html">Shop Now </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item item4">
+				<div class="container">
+					<div class="w3l-space-banner">
+						<div class="carousel-caption p-lg-5 p-sm-4 p-3">
+							<p>Get Now
+								<span>40%</span> Discount</p>
+							<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">Today
+								<span>Discount</span>
+							</h3>
+							<a class="button2" href="product.html">Shop Now </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<!-- //banner -->
+
+	<!-- copyright -->
+	<div class="copy-right py-3">
+		<div class="container">
+			<p class="text-center text-white">© 2021 Dipu Store. All rights reserved | Design by
+				<a href="#"> Dipendra.</a>
+			</p>
+		</div>
+	</div>
+	<!-- js-files -->
+	<!-- jquery -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+
+
+	<!-- popup modal (for location)-->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+
+		});
+	</script>
+
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+		paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
+
+		paypals.minicarts.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+	</script>
+
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	
+	<!-- scroll seller -->
+	<script src="js/scroll.js"></script>
+
+	<!-- smoothscroll -->
+	<script src="js/SmoothScroll.min.js"></script>
+
+	<!-- start-smooth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+
+	<!-- smooth-scrolling-of-move-up -->
+	<script>
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
